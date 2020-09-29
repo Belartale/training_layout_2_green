@@ -1,0 +1,103 @@
+.offer {
+  min-width: 1px;
+}
+.offer__block-cards {
+  display: flex;
+  justify-content: space-between;
+}
+.offer__card {
+  margin: 30px 10px 30px;
+  padding-bottom: 25px;
+  border: 1px solid var(--color-white);
+  border-radius: var(--border-radius-object);
+  width: 225px;
+  text-align: center;
+  background: linear-gradient(
+    to top,
+    var(--color-card-top-light-white),
+    #c9c9c9 27%,
+    var(--color-card-bottom-dark-white) 27%,
+    var(--color-card-top-light-white)
+  );
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.6);
+}
+.offer__service {
+  padding-top: 20px;
+  font-size: 21.33px;
+  font-family: var(--font-first);
+  text-shadow: 0px 0px 2px white;
+}
+.offer__type-service {
+  padding-top: 15px;
+  font-size: 38.47px;
+  font-family: var(--font-first);
+  color: var(--color-first-dark-green);
+  text-shadow: 0px -2px 1px black, 0px -0.5px 3px white;
+}
+.offer__cost-service {
+  padding-bottom: 20px;
+  font-size: 22.3px;
+  font-family: var(--font-first);
+  text-shadow: 0px 0px 2px white;
+}
+.offer__btn::before {
+  position: absolute;
+  top: 155%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: url(../img/ott.png);
+}
+
+/*! offer two (row two) */
+.offer-description__card {
+  position: relative;
+  margin: 0px 10px 30px;
+  background: none;
+  padding: 0px;
+}
+.offer-description__card::before {
+  content: url(../img/img-card-promo.png);
+  position: absolute;
+  top: 8.5%;
+  left: 87%;
+  transform: translate(-50%, -50%);
+}
+.offer-description__card-head {
+  border-bottom: 1px solid var(--color-border-white);
+  background: linear-gradient(to top, var(--color-card-bottom-dark-white), var(--color-card-top-light-white));
+}
+.offer-description__card-body {
+  border-bottom-left-radius: var(--border-radius-object);
+  border-bottom-right-radius: var(--border-radius-object);
+  padding-bottom: 30px;
+  text-align: center;
+  background: linear-gradient(var(--color-card-top-light-green), var(--color-card-bottom-dark-green));
+}
+.offer-description__points {
+  border-top: 1px solid var(--color-border-white);
+  border-bottom: 1px solid var(--color-border-black);
+  padding: 10px 0px 10px 40px;
+  list-style: none;
+  text-align: left;
+  font-family: var(--font-second);
+  font-size: 16.86px;
+  text-decoration: underline;
+  color: var(--color-white);
+  text-shadow: 0px 1px 1px black;
+}
+.offer-description__points::before {
+  content: url(/img/img-yes-color-black.png);
+  position: relative;
+  right: 10px;
+  top: 5px;
+}
+.offer-description__points:first-child {
+  border-top: 1px solid black;
+}
+.offer-description__points:nth-of-type(4) {
+  border-bottom: 0px;
+  padding-bottom: 25px;
+}
+.offer-description__btn {
+  background: linear-gradient(to top, var(--color-button-black), var(--color-button-gray)) !important;
+}

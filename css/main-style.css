@@ -1,0 +1,51 @@
+@font-face {
+  font-family: PTSans;
+  src: url(../fonts/PTSans.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: ChunkFive;
+  src: url(../fonts/ChunkFive.ttf);
+  font-style: normal;
+  font-weight: bold;
+}
+/*! all var*/
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*--color-<priority>-<shade>-<main color>*/
+:root {
+  --color-white: white;
+  --color-gray-white: #f3f3f3; /*table*/
+  --color-first-light-green: #75e737; /*table*/
+  --color-first-dark-green: #47a906; /*table*/
+
+  --color-border-white: rgba(255, 255, 255, 0.3);
+  --color-border-black: rgba(0, 0, 0, 0.2);
+
+  --color-button-gray: #717171;
+  --color-button-black: #242424;
+  /*! for cards*/
+
+  --color-card-top-light-white: #fafafa; /*head cards*/
+  --color-card-bottom-dark-white: #dbdbdb; /*head cards*/
+
+  --color-card-top-light-green: #72e233; /*body cards*/
+  --color-card-bottom-dark-green: #379200; /*body cards*/
+
+  /*! fonts */
+  --font-first: ChunkFive;
+  --font-second: Arial;
+  --font-last: PTSans;
+
+  /*! others var*/
+  --border-radius-object: 5px;
+}
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
